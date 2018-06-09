@@ -328,3 +328,12 @@ table td {
     page-break-after: avoid;
   }
 }
+
+div[data-caption]::before {
+  content: attr(data-caption);
+  display: block;
+  font-size: small;
+  font-style: italic;
+  # color: #6c5f7c;
+  # margin: -.4rem 0 .6rem -1.2rem
+}
