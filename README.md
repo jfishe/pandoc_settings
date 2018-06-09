@@ -11,9 +11,14 @@ email: jdfenw@gmail.com
 
 * [gh-themes-magick] is intended for converting a README.md file.
 * [GitHub Pandoc HTML5 Template] provides a general purpose template but the
-  code blocks have poor contrast with the available syntax highlighting. The embedded style-sheet is awkward to work with.
+  code blocks have poor contrast with the available syntax highlighting. The
+  embedded style-sheet is awkward to work with.
 
-So we'll start with pandoc's default.html5 template and merge features from [GitHub Pandoc HTML5 Template] without the style sheet. An external style sheet from [gist killercup 5917178] provides a nice design and allows easy modification of the appearance of code-blocks. [Displaying code in a web page] and [Posting Code Blocks on a WordPress Site] provide insight into css styling.
+So we'll start with pandoc's default.html5 template and merge features from
+[GitHub Pandoc HTML5 Template] without the style sheet. An external style sheet
+from [gist killercup 5917178] provides a nice design and allows easy
+modification of the appearance of code-blocks. [Displaying code in a web page]
+and [Posting Code Blocks on a WordPress Site] provide insight into css styling.
 
 Obtain pandoc's default HTML5 template and killercup's pandoc.css:
 
@@ -33,13 +38,13 @@ rm -rf $TMP/5917178
 
 After some experimenting, the espresso theme has the best contrast.
 
-```{caption="viml" .bash}
+```{contenteditable="true" spellcheck="false" caption="viml" .bash}
 :Pandoc --to=html5 --css=pandoc.css --highlight-style=breezedark --toc --template=default.html5
 ```
 
 The theme may be saved.
 
-```{caption="bash" .bash}
+```{contenteditable="true" spellcheck="false" caption="bash" .bash}
 pandoc --print-highlight-style=espresso > myespresso.theme
 ```
 
@@ -47,11 +52,11 @@ Pandoc generates the file using Unix EOL, but Windows requires Windows EOL
 when reading the file, so convert the line endings accordingly. Reference the `.theme` file with a path, if it's not in the current directory.
 
 
-```{caption="bash" .bash}
+```{contenteditable="true" spellcheck="false" caption="bash" .bash}
 pandoc --standalone --to=html5 --highlight-style=myespresso.theme
 ```
 
-```{caption="PowerShell" .powershell}
+```{contenteditable="true" spellcheck="false" caption="PowerShell" .powershell}
 Get-ChildItem $PROFILE
 ```
 
