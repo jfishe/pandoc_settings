@@ -1,6 +1,9 @@
 /*
  * I add this to html files generated with pandoc.
  */
+:root {
+  --main-bg-color: #fefefe;
+}
 
 html {
   font-size: 100%;
@@ -17,7 +20,7 @@ body {
   padding: 1em;
   margin: auto;
   max-width: 42em;
-  background: #fefefe;
+  background: var(--main-bg-color);
 }
 
 a {
@@ -335,6 +338,6 @@ div[data-caption]::before {
   font-size: small;
   font-style: italic;
   color: #6c5f7c;
-  background: #fefefe;
+  background: var(--main-bg-color);
   /* margin: -.4rem 0 .6rem -1.2rem */
 }
