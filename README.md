@@ -65,7 +65,7 @@ Get-ChildItem $PROFILE
 
 Pandoc uses `{...}` to add attributes to code blocks. This is useful for enabling editable content and providing a caption for css to style. Note that abbreviations like `contenteditable` does work, use `contenteditable="true"`.
 
-```{contenteditable="true" spellcheck="false" caption="markdown" .markdown}
+~~~{contenteditable="true" spellcheck="false" caption="markdown" .markdown}
 Compare the normal format:
 
     ```bash
@@ -77,7 +77,7 @@ to the meta-data version:
     ```{contenteditable="true" spellcheck="false" caption="bash" .bash}
        Your code here
     ```
-```
+~~~
 
 <!--
 ## References
