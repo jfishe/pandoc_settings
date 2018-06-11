@@ -25,7 +25,7 @@ Obtain pandoc's default HTML5 template and killercup's pandoc.css:
 
 ```{contenteditable="true" spellcheck="false" caption="bash" .bash}
 # Extract pandoc default HTML5 template.
-pandoc --print-default-template=html5 > default.html5
+pandoc --print-default-template=html5 > pandoc.html5
 
 # Get killercup's pandoc.css
 cd $TMP
@@ -81,7 +81,7 @@ to the meta-data version:
 
 ## Links and References
 
-Inline references may be used when writing. `Pandoc` can convert them to reference links and list them at the end of the document
+Inline references may be used when writing. `Pandoc` can convert them to reference links and list them at the end of the document. Include `--standalone` to preserve `YAML` metadata.
 
 ```{contenteditable="true" spellcheck="false" caption="bash" .bash}
 pandoc --standalone --reference-links --reference-location document --from markdown --to markdown README1.md
