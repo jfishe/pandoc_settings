@@ -37,16 +37,16 @@ rm -rf $TMP/5917178
 
 ### GitHub Pandoc HTML5 Template
 
-After some experimenting, the espresso theme has the best contrast.
+After some experimenting, the `breezedark` theme has the best contrast.
 
 ```{contenteditable="true" spellcheck="false" caption="viml" .bash}
-:Pandoc --to=html5 --css=pandoc.css --highlight-style=breezedark --toc --template=default.html5
+:Pandoc --to=html5 --css=pandoc.css --highlight-style=breezedark --toc --template=pandoc.html5
 ```
 
 The theme may be saved.
 
 ```{contenteditable="true" spellcheck="false" caption="bash" .bash}
-pandoc --print-highlight-style=espresso > myespresso.theme
+pandoc --print-highlight-style=breezedark > mybreezedark.theme
 ```
 
 Pandoc generates the file using Unix EOL, but Windows requires Windows EOL
@@ -78,6 +78,14 @@ to the meta-data version:
        Your code here
     ```
 ~~~
+
+## Links and References
+
+Inline references may be used when writing. `Pandoc` can convert them to reference links and list them at the end of the document
+
+```{contenteditable="true" spellcheck="false" caption="bash" .bash}
+pandoc --standalone --reference-links --reference-location document --from markdown --to markdown README1.md
+```
 
 <!--
 ## References
