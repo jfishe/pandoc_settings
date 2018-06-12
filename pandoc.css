@@ -332,7 +332,7 @@ table td {
   }
 }
 
-h1.title,p.subtitle{
+h1.title,p.subtitle,p.date {
     text-align:center
 }
 
@@ -352,6 +352,7 @@ div.line-block{
 }
 
 div[data-caption]::before {
+  text-transform:capitalize;
   content: attr(data-caption);
   display: block;
   font-size: small;
