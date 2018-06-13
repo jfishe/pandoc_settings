@@ -2,7 +2,6 @@
 title: README.md
 subtitle: Pandoc Markdown Settings
 author: John D. Fisher
-email: jdfenw@gmail.com
 ---
 # Pandoc Markdown Settings
 
