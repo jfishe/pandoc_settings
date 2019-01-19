@@ -83,7 +83,7 @@ h4, h5, h6 {
   font-weight: bold;
 }
 
-h1[id] { display: none; }
+h1:not([id="bibliography"]) { display: none; }
 
 h1 {
   font-size: 2.5em;
@@ -127,7 +127,7 @@ hr {
 }
 
 pre, code, kbd, samp {
-  # color: #000;
+  /* color: #000; */
   font-family: monospace, monospace;
   _font-family: 'courier new', monospace;
   font-size: 0.98em;
