@@ -8,8 +8,6 @@ classoption:
        DIV=classic
 ---
 
-# Pandoc Markdown Settings
-
 ## Pandoc HTML5 Template
 
 [Pandoc Wiki User Contributed Templates] lists two `HTML5` templates:
@@ -71,6 +69,7 @@ Pandoc uses `{...}` to add attributes to code blocks. This is useful for
 enabling editable content and providing a caption for css to style. Note that
 abbreviations like `contenteditable` do work, use `contenteditable="true"`.
 
+<!-- markdownlint-disable MD048 -->
 ~~~{contenteditable="true" spellcheck="false" caption="markdown" .markdown}
 Compare the normal format:
 
@@ -84,6 +83,7 @@ to the meta-data version:
        Your code here
     ```
 ~~~
+<!-- markdownlint-enable MD048 -->
 
 ## Links and References
 
