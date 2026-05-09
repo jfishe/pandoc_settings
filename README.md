@@ -127,12 +127,20 @@ The CSS in this template reuses source code taken from the following projects:
 * Primer CSS: Copyright © 2016-2017 GitHub Inc., MIT License (MIT):
   <http://primercss.io/>
 
+### Citation Style Language (CSL)
+
+`csl/ieee.csl` is the IEEE citation style from the Zotero Style Repository,
+by Michael Berkowitz and contributors. It is licensed under the Creative
+Commons Attribution-ShareAlike 3.0 Unported License (CC BY-SA 3.0):
+
+* <https://www.zotero.org/styles/ieee>
+* <https://creativecommons.org/licenses/by-sa/3.0/>
+
 ## References
 
 [Pandoc Wiki User Contributed Templates]: https://github.com/jgm/pandoc/wiki/User-contributed-templates
 [gh-themes-magick]: https://github.com/tajmone/gh-themes-magick
 [GitHub Pandoc HTML5 Template]: https://github.com/tajmone/pandoc-goodies/tree/master/templates/html5/github
-[Listing Captions With Delimited Code Blocks and Pandoc]: https://www.kartar.net/2012/12/listing-captions-with-delimited-code-blocks-and-pandoc/
 [gist killercup 5917178]: https://gist.github.com/killercup/5917178
 [Displaying code in a web page]: https://websemantics.uk/articles/displaying-code-in-web-pages/
 [Posting Code Blocks on a WordPress Site]: https://css-tricks.com/posting-code-blocks-wordpress-site/
