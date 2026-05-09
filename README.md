@@ -102,7 +102,7 @@ pandoc --standalone --reference-links --reference-location=document \
 ## View HTML with Local HTTP Server
 
 ``` {contenteditable="true" spellcheck="false" caption="bash" .bash}
-(python -m http.server --bind localhost &) &&
+(python3 -m http.server --bind localhost 8000 &) &&
   "$BROWSER" http://localhost:8000/README.html
 ```
 
