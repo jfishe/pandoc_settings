@@ -72,6 +72,11 @@ img {
   max-width: 100%;
 }
 
+svg {
+  height: auto;
+  max-width: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: #111;
   line-height: 125%;
@@ -82,8 +87,6 @@ h1, h2, h3, h4, h5, h6 {
 h4, h5, h6 {
   font-weight: bold;
 }
-
-h1:not([id="bibliography"]) { display: none; }
 
 h1 {
   font-size: 2.5em;
@@ -137,6 +140,11 @@ pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
+}
+
+.sourceCode {
+  background: transparent;
+  overflow: visible;
 }
 
 b, strong {
@@ -226,6 +234,18 @@ figcaption {
   font-size: 0.8em;
   font-style: italic;
   margin: 0 0 .8em;
+}
+
+div.abstract {
+  margin: 2em;
+  text-align: left;
+  font-size: 85%;
+}
+
+div.abstract-title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5em;
 }
 
 table {
@@ -349,6 +369,38 @@ p.subtitle{
 }
 div.line-block{
     white-space:pre-line
+}
+
+div.columns {
+  display: flex;
+  gap: min(4vw, 1.5em);
+}
+
+div.column {
+  flex: auto;
+  overflow-x: auto;
+}
+
+div.hanging-indent {
+  margin-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+ul.task-list {
+  list-style: none;
+}
+
+ul.task-list li input[type="checkbox"] {
+  font-size: inherit;
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+
+.display.math {
+  display: block;
+  text-align: center;
+  margin: 0.5rem auto;
 }
 
 div[data-caption]::before {

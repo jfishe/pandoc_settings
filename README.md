@@ -37,6 +37,8 @@ rm -rf $TMP/5917178
 
 ### GitHub Pandoc HTML5 Template
 
+Pandoc v3.9.0.2 produced the current templates.
+
 After some experimenting, the `breezedark` theme has the best contrast.
 
 ```{contenteditable="true" spellcheck="false" caption="bash" .bash}
@@ -106,26 +108,15 @@ pandoc --standalone --reference-links --reference-location=document \
 
 ## Third Party Notices
 
-### pandoc.html5
+### pandoc.html5 and pandoc.tex
 
-"GitHub HTML5 Pandoc Template" v2.2 — by John D. Fisher  
-Copyright © John D. Fisher, 2018, MIT License (MIT).
+`templates/pandoc.html5` and `templates/pandoc.tex` are based on pandoc's
+default HTML5 and LaTeX templates. Pandoc is Copyright © 2006-2024 John
+MacFarlane and, except where otherwise noted, is released under the GNU General
+Public License, version 2 or later (GPL-2.0-or-later).
 
-The CSS from the original template has been removed to support using a modified
-version of <https://gist.github.com/killercup/5917178>.
-
-"GitHub HTML5 Pandoc Template" v2.1 — by Tristano Ajmone  
-Copyright © Tristano Ajmone, 2017, MIT License (MIT). Project's home:
-
-* <https://github.com/tajmone/pandoc-goodies>
-
-The CSS in this template reuses source code taken from the following projects:
-
-* GitHub Markdown CSS: Copyright © Sindre Sorhus, MIT License (MIT):
-  <https://github.com/sindresorhus/github-markdown-css>
-
-* Primer CSS: Copyright © 2016-2017 GitHub Inc., MIT License (MIT):
-  <http://primercss.io/>
+* <https://github.com/jgm/pandoc>
+* <https://pandoc.org/>
 
 ### Citation Style Language (CSL)
 
