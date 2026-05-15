@@ -1,3 +1,18 @@
+-- Convert task markers in OrderedList items to format-appropriate checkbox
+-- renderings.
+--
+-- Usage:
+--   pandoc --lua-filter=task-orderedlist.lua --to=FORMAT input.md
+--
+-- This filter rewrites ordered list items that start with GitHub- or org-style
+-- task markers such as `[ ]`, `[x]`, or `[X]`. HTML output gets disabled
+-- checkbox inputs plus supporting CSS in `header-includes`; gfm, org, and
+-- latex outputs get format-specific raw markup; other formats fall back to
+-- Unicode ballot box characters.
+--
+-- The filter only rewrites the first block in each ordered-list item, so task
+-- markers must appear at the start of that block to be recognized.
+
 local List = require 'pandoc.List'
 
 local M = {}

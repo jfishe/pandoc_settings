@@ -1,7 +1,7 @@
 -- Reorder Markdown YAML front matter so `title` is first and `tags` is last.
 --
 -- Usage:
---   pandoc --standalone --lua-filter=filters/reorder_metadata.lua \
+--   pandoc --standalone --lua-filter=reorder_metadata.lua \
 --     --to=markdown input.md
 --
 -- This filter rewrites Markdown-family output formats when Pandoc is reading a
